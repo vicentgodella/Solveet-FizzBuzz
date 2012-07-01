@@ -43,6 +43,11 @@ public class FizzBuzzTest {
 	public void testDevuelveBuzzSiNumeroEs10() {
 		assertEquals("Buzz", fb.obtieneRespuesta(10));
 	}
+
+	@Test
+	public void testDevuelveFizzSiNumeroEs13() {
+		assertEquals("Fizz", fb.obtieneRespuesta(13));
+	}
 	
 	@Test
 	public void testDevuelveFizzBuzzSiNumeroEs15() {
@@ -53,10 +58,19 @@ public class FizzBuzzTest {
 	public void testDevuelveFizzSiNumeroEs18() {
 		assertEquals("Fizz", fb.obtieneRespuesta(18));
 	}
+
+	@Test
+	public void testDevuelveBuzzSiNumeroEs52() {
+		assertEquals("Buzz", fb.obtieneRespuesta(52));
+	}
 	
 	@Test
 	public void testSiGeneraResultadoDe10() {
 		assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n", fb.generaResultados(10));
 	}
 
+	@Test
+	public void testSiGeneraResultadoDe13() {
+		assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\nFizz\n", fb.generaResultados(13));
+	}
 }
