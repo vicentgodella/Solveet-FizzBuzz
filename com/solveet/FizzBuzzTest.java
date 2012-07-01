@@ -53,5 +53,10 @@ public class FizzBuzzTest {
 	public void testDevuelveFizzSiNumeroEs18() {
 		assertEquals("Fizz", fb.obtieneRespuesta(18));
 	}
+	
+	@Test
+	public void testSiGeneraResultadoDe10() {
+		assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n", fb.generaResultados(10));
+	}
 
 }

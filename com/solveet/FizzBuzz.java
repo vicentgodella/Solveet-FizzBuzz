@@ -1,6 +1,15 @@
 package com.solveet;
 
 public class FizzBuzz {
+	public String generaResultados(int n){
+		String resultado = "";
+		
+		for(int i = 1; i <= n; i++){
+			resultado += this.obtieneRespuesta(i) + "\n";
+		}
+		
+		return resultado;
+	}
 
 	public String obtieneRespuesta(int i){
 		String respuesta = "";
